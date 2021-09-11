@@ -752,6 +752,12 @@ img {
   position: relative;
 }
 
+@media screen and (max-width: 2000px) {
+  .banner .banner_main .main_right .right_box {
+    width: 75%;
+  }
+}
+
 .banner .banner_main .main_right .right_box .wind {
   width: 0;
   height: 100%;

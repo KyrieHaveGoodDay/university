@@ -46,6 +46,7 @@
     background-image: url(../img/lesson1/line.png);
 
     position: relative;
+    
 }
 // 版頭
 .banner {
@@ -187,6 +188,9 @@
                 width: 100%;
                 height: 67%;
                 position: relative;
+                @media screen and (max-width: 2000px) {
+                    width: 75%;
+                }
                 .wind {
                     width: 0;
                     height: 100%;
