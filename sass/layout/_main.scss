@@ -1,0 +1,1386 @@
+.size {
+    max-width: 1475px;
+    margin: 0 auto;
+    //    border: 1px solid black;
+    @media screen and (max-width: 1630px) {
+        width: 100%;
+    }
+}
+.swiper {
+    width: 250px;
+}
+
+// 左邊跑馬燈
+.marquee_left {
+    width: 60px;
+    height: 100vh;
+    text-align: center;
+    background-color: #003cb9;
+    position: fixed;
+    left: 0;
+    z-index: 2;
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+.marquee_left_box {
+    height: 100vh;
+}
+// 右邊跑馬燈
+.marquee_right {
+    width: 60px;
+    height: 100vh;
+    text-align: center;
+    background-color: #003cb9;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+.marquee_right_box {
+    height: 100vh;
+}
+.main {
+    background-image: url(../img/lesson1/line.png);
+
+    position: relative;
+}
+// 版頭
+.banner {
+    height: 700px;
+    background-image: url(../img/body1_main.png);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    background-position: left top;
+    z-index: 1;
+    position: relative;
+    // border: 1px solid black;
+    @media screen and (max-width: 1024px) {
+        // background-image: url(../../img/banner/line.png);
+        height: 100%;
+    }
+    @media screen and (max-width: 768px) {
+        background-image: url(../img/banner/line.png);
+        height: 100%;
+    }
+    // boxman1024
+    .boxman1024 {
+        display: none;
+        @media screen and (max-width: 1024px) {
+            display: block;
+            position: absolute;
+            width: 20%;
+            top: 10%;
+            left: 50%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 20%;
+        }
+        @media screen and (max-width: 414px) {
+            width: 30%;
+        }
+    }
+    .check_mb {
+        display: none;
+        @media screen and (max-width: 1024px) {
+            display: block;
+            position: absolute;
+            width: 13%;
+            top: 9%;
+            left: 72%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 10%;
+            left: 72%;
+        }
+        @media screen and (max-width: 414px) {
+            width: 15%;
+            left: 80%;
+        }
+    }
+    .banner_main {
+        max-width: 1700px;
+        height: 100%;
+        margin: 0 auto;
+        // border: 1px solid black;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        @media screen and (max-width: 1024px) {
+            display: block;
+            // padding: 0 5rem;
+        }
+        @media screen and (max-width: 768px) {
+            padding: 0;
+        }
+        .main_left {
+            // border: 1px solid black;
+            position: relative;
+            z-index: 5;
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+            // 女人
+            .icon_womon {
+                opacity: 0;
+                // padding-top: 2rem;
+                position: absolute;
+                top: 8%;
+                // left: 16.5%;
+            }
+            .icon_light {
+                opacity: 0;
+                position: absolute;
+                top: 16%;
+                left: 70%;
+                width: 20%;
+            }
+        }
+        // 文字
+        .banner_text {
+            // width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 70px;
+            padding-bottom: 180px;
+            // border: 1px solid black;
+            // z-index: 10;
+            @media screen and (max-width: 1024px) {
+                // margin-top: 5rem;
+                padding-top: 8rem;
+                width: 100%;
+                margin: 0 auto;
+                padding-bottom: 120px;
+            }
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                padding-bottom: 60px;
+            }
+            // 大標
+            .banner_text {
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+            .banner_text_mb {
+                display: none;
+                @media screen and (max-width: 768px) {
+                    display: block;
+                }
+            }
+            img {
+                z-index: 10;
+            }
+        }
+        .main_right {
+            // border: 1px solid black;
+            z-index: 5;
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+            .right_box {
+                width: 100%;
+                height: 67%;
+                position: relative;
+                .wind {
+                    width: 0;
+                    height: 100%;
+                    background-image: url(../img/banner/man_home.png);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 16%;
+                    left: 30%;
+                }
+                .man {
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(../img/banner/eee.png);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 25%;
+                    left: 35%;
+                }
+                .check {
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(../img/banner/check.png);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 10%;
+                    transform: rotate(180deg);
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    // 雲
+    .icon_cloud1 {
+        position: absolute;
+        top: 6%;
+        left: 5%;
+        @media screen and (max-width: 1024px) {
+            top: 4%;
+            left: 10%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 20%;
+        }
+    }
+    .icon_cloud2 {
+        width: 6%;
+        position: absolute;
+        top: 9%;
+        left: 54%;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+    .icon_cloud3 {
+        position: absolute;
+        top: 11%;
+        right: 4%;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+    .icon_cloud4 {
+        position: absolute;
+        bottom: 18%;
+        left: 37%;
+        @media screen and (max-width: 1024px) {
+            bottom: 0;
+            left: 5%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 20%;
+            left: 0;
+        }
+    }
+    .icon_cloud5 {
+        position: absolute;
+        bottom: 18%;
+        right: 34%;
+        @media screen and (max-width: 1024px) {
+            bottom: 0;
+            right: 5%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 20%;
+            right: 0;
+        }
+    }
+
+    //箭頭
+    .icon_arrow_1 {
+        position: absolute;
+        top: 19%;
+        left: 5%;
+        @media screen and (max-width: 1024px) {
+            top: 13%;
+            left: 18%;
+        }
+        @media screen and (max-width: 768px) {
+            opacity: 0;
+            top: 16%;
+            left: 27%;
+        }
+        @media screen and (max-width: 414px) {
+            // top: 16%;
+            left: 20%;
+        }
+    }
+    .icon_arrow_2 {
+        position: absolute;
+        bottom: 23%;
+        left: 18.5%;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+    .icon_arrow_3 {
+        position: absolute;
+        right: 5%;
+        top: 25%;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+    .icon_arrow_4 {
+        position: absolute;
+        right: 10%;
+        top: 40%;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+}
+.lesson1 {
+    width: 100%;
+    height: 1620px;
+    // background-image: url(../img/lesson1/line.png);
+    // background-repeat: no-repeat;
+    background-position: left top;
+    position: relative;
+    // border: 1px solid black;
+    @media screen and (max-width: 1024px) {
+        // height: 100%;
+        // height: 2000px;
+    }
+    @media screen and (max-width: 768px) {
+        height: 100%;
+        // height: 2000px;
+    }
+    // 滑鼠
+    .icon_mouse {
+        position: absolute;
+        top: -10%;
+        left: 47%;
+        z-index: 3;
+        cursor: pointer;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+    // boxman
+    .boxman {
+        position: absolute;
+        top: -15%;
+        left: 23%;
+        z-index: 3;
+        // transform: rotate(45deg);
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+    .lesson1_bg {
+        width: 100%;
+        height: 110%;
+        background-image: url(../img/lesson1/body1.png);
+        background-size: cover;
+        position: absolute;
+        top: -18%;
+        z-index: 2;
+        // border: 1px solid black;
+        @media screen and (max-width: 1024px) {
+            background-image: none !important;
+        }
+        @media screen and (max-width: 768px) {
+            position: static;
+            height: 100%;
+        }
+        // border: 1px solid black;
+        .activity_boss {
+            // border: 1px solid black;
+            // padding: 0 60px;
+            margin-top: 27rem;
+            height: 370px;
+            position: relative;
+            @media screen and (max-width: 1024px) {
+                margin-top: 17rem;
+            }
+            @media screen and (max-width: 768px) {
+                margin: 0;
+            }
+            @media screen and (max-width: 414px) {
+                height: 10%;
+                //    height: 100%;
+            }
+
+            .lesson1_title {
+                position: absolute;
+                z-index: 3;
+                left: 37%;
+                top: -21%;
+                @media screen and (max-width: 1024px) {
+                    position: static;
+                    display: block;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+                @media screen and (max-width: 768px) {
+                    transform: translateY(10px);
+                    padding: 0 150px;
+                }
+                @media screen and (max-width: 414px) {
+                    transform: translateY(5px);
+                    padding: 0 120px;
+                }
+            }
+            // step123456架構
+            .bg_yellow {
+                height: 100%;
+                background-color: #fdf586;
+                margin-right: 12px;
+                border-radius: 20px;
+                @media screen and (max-width: 1024px) {
+                    display: none;
+                }
+            }
+            .activity__main {
+                // border: 1px solid black;
+                width: 100%;
+                position: absolute;
+                top: -16px;
+                left: 12px;
+                @media screen and (max-width: 1024px) {
+                    position: static;
+                    padding: 0 20px;
+                }
+                .activity_top {
+                    width: 100%;
+                }
+                .activity_content {
+                    background-image: url(../img/lesson1/activity_mid.png);
+                    background-size: contain;
+                    position: relative;
+                    // border: 1px solid black;
+                    // 左右兩邊的箭頭
+                    .slide_left {
+                        display: none;
+                        @media screen and (max-width: 1024px) {
+                            display: block;
+                            position: absolute;
+                            top: 35%;
+                            left: -2%;
+                            z-index: 10;
+                        }
+                        @media screen and (max-width: 768px) {
+                            width: 9%;
+                        }
+                    }
+                    .slide_right {
+                        display: none;
+                        @media screen and (max-width: 1024px) {
+                            display: block;
+                            position: absolute;
+                            top: 35%;
+                            right: -2%;
+                            z-index: 10;
+                        }
+                        @media screen and (max-width: 768px) {
+                            width: 9%;
+                        }
+                    }
+                    .activity_slide_box {
+                        // width: 540px;
+                        // height: 300px;
+                        // border: 1px solid black;
+                        @media screen and (max-width: 1024px) {
+                            margin-right: 10px;
+                        }
+                        .activity_slide {
+                            padding: 0 2rem;
+                            display: flex;
+                            // flex-wrap: wrap;
+                            @media screen and (max-width: 1630px) {
+                                padding: 0 0.5rem;
+                            }
+                            img {
+                                // margin: 0 1rem;
+                                padding: 0 8px;
+                                // width: 230px;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+                .activity_bom {
+                    width: 100%;
+                }
+            }
+        }
+        .activity2 {
+            margin-top: 8rem;
+            height: 520px;
+            position: relative;
+            // border: 1px solid black;
+            @media screen and (max-width: 1500px) {
+                // height: 1500px;
+                // height: 100%;
+            }
+            @media screen and (max-width: 768px) {
+                margin-top: 0;
+                height: 100%;
+            }
+            // 課程標題
+            .activity2_title {
+                position: absolute;
+                z-index: 3;
+                left: 37%;
+                top: -15%;
+                @media screen and (max-width: 1024px) {
+                    position: static;
+                    display: block;
+                    margin: 0 auto;
+                    transform: translateY(30px);
+                }
+                @media screen and (max-width: 768px) {
+                    transform: translateY(30px);
+                    padding: 0 150px;
+                }
+                @media screen and (max-width: 414px) {
+                    transform: translateY(15px);
+                    padding: 0 120px;
+                }
+            }
+            // 課程背景
+            .bg_green {
+                height: 100%;
+                background-color: #bef9cc;
+                margin-left: 10px;
+                margin-right: 20px;
+                border-radius: 20px;
+                @media screen and (max-width: 1024px) {
+                    display: none;
+                }
+            }
+            // 課程內容
+            .activity2_main {
+                // border: 1px solid black;
+                position: absolute;
+                top: -60px;
+                left: 30px;
+                @media screen and (max-width: 1024px) {
+                    position: static;
+                    padding: 0 20px;
+                }
+                .activity2_top {
+                    width: 100%;
+                }
+                .activity2_content {
+                    background-image: url(../img/lesson1/activity2_mid.png);
+                    background-size: contain;
+                    // background-repeat: no-repeat;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 20px;
+                    padding-top: 2rem;
+                    @media screen and (max-width: 1500px) {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    img {
+                        margin: 0 7px;
+                        @media screen and (max-width: 1500px) {
+                            display: block;
+                            margin: 0 auto;
+                        }
+                        @media screen and (max-width: 768px) {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                .activity2_bom {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.lesson2 {
+    width: 100%;
+    height: 2000px;
+    background-image: url(../img/lesson2/line.png);
+    position: relative;
+    @media screen and (max-width: 1600px) {
+        height: 100%;
+    }
+    .lesson2_bg {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/lesson2/lesson2_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: -28%;
+        z-index: 3;
+        @media screen and (max-width: 1600px) {
+            background-image: none;
+            position: static;
+        }
+        // border: 1px solid black;
+        // 講師陣容
+        .content {
+            margin-top: 14rem;
+            position: relative;
+            // border: 1px solid black;
+            @media screen and (max-width: 1600px) {
+                margin-top: 0;
+            }
+            @media screen and (max-width: 1500px) {
+                margin-top: 33rem;
+            }
+            @media screen and (max-width: 1024px) {
+                margin-top: 22rem;
+                padding: 0 20px;
+            }
+            @media screen and (max-width: 768px) {
+                margin: 0;
+            }
+            // 講師陣容標題
+            .lecturer_title {
+                position: absolute;
+                top: -11%;
+                left: 37%;
+                @media screen and (max-width: 1600px) {
+                    top: -6%;
+                }
+                @media screen and (max-width: 1024px) {
+                    position: static;
+                    display: block;
+                    margin: 0 auto;
+                    width: 30%;
+                    transform: translateY(50px);
+                }
+                @media screen and (max-width: 768px) {
+                    width: 87%;
+                    transform: translateY(50px);
+                    padding: 0 150px;
+                }
+                @media screen and (max-width: 550px) {
+                    width: 87%;
+                    transform: translateY(30px);
+                    padding: 0 100px;
+                }
+                @media screen and (max-width: 414px) {
+                    // width: 87%;
+                    transform: translateY(20px);
+                    padding: 0 80px;
+                }
+            }
+            .lecturer_top {
+                width: 100%;
+            }
+            .lecturer_mid {
+                background-image: url(../img/lesson2/lecturer_mid.png);
+                background-size: contain;
+                position: relative;
+                height: 500px;
+                @media screen and (max-width: 1600px) {
+                    height: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                img {
+                    cursor: pointer;
+                    @media screen and (max-width: 1600px) {
+                        // text-align: center;
+                        margin: 0 auto;
+                    }
+                }
+                .lecturer1 {
+                    margin-left: 2rem;
+                    transform: translateY(-20px);
+                    @media screen and (max-width: 1600px) {
+                        position: static;
+                        margin: 0;
+                        transform: translateX(50px);
+                        // text-align: center;
+                        margin: 0 auto;
+                    }
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+                .lecturer1_mb {
+                    display: none;
+                    @media screen and (max-width: 768px) {
+                        display: block;
+                        width: 75%;
+                    }
+                }
+                .lecturer2 {
+                    position: absolute;
+                    left: 42%;
+                    @media screen and (max-width: 1600px) {
+                        position: static;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 80%;
+                    }
+                }
+                .lecturer3 {
+                    position: absolute;
+                    top: -2%;
+                    right: 2%;
+                    @media screen and (max-width: 1600px) {
+                        position: static;
+                        transform: translateY(10px);
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 75%;
+                    }
+                }
+                .lecturer4 {
+                    position: absolute;
+                    left: 60%;
+                    bottom: -5%;
+                    @media screen and (max-width: 1600px) {
+                        position: static;
+                    }
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+                // mb顯示5_mb
+                .lecturer5_mb {
+                    display: none;
+                    @media screen and (max-width: 768px) {
+                        display: block;
+                        width: 80%;
+                        margin-top: 10px;
+                    }
+                }
+                .lecturer5 {
+                    // width: 18%;
+                    position: absolute;
+                    left: 22%;
+                    bottom: -5%;
+                    @media screen and (max-width: 1600px) {
+                        position: static;
+                    }
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+                // mb顯示4_mb
+                .lecturer4_mb {
+                    display: none;
+                    @media screen and (max-width: 768px) {
+                        display: block;
+
+                        margin-top: 10px;
+                        transform: translateX(150px);
+                    }
+                    @media screen and (max-width: 414px) {
+                        transform: translateX(100px);
+                    }
+                }
+            }
+            .lecturer_bot {
+                width: 100%;
+            }
+        }
+        // 電商小百科
+        .ency {
+            margin-top: 2rem;
+            // border: 1px solid black;
+            width: 100%;
+            position: relative;
+            @media screen and (max-width: 1024px) {
+                padding: 0 20px;
+            }
+            @media screen and (max-width: 768px) {
+                margin-top: 4rem;
+                // padding-top: 2rem;
+            }
+
+            // 背景圖標題
+            .ecny_title {
+                display: none;
+                @media screen and (max-width: 768px) {
+                    display: block;
+                    width: 55%;
+                    position: absolute;
+                    z-index: 5;
+                    top: -6%;
+                    left: 24%;
+                }
+                @media screen and (max-width: 414px) {
+                    // width: 40%;
+                    // top: -6%;
+                    // left: 33%;
+                }
+            }
+            .ency_bg {
+                position: relative;
+                
+            }
+            
+            // 背景圖
+            .ency_bgc {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                z-index: -1;
+                @media screen and (max-width: 1600px) {
+                    z-index: 1;
+                }
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+            .ency_bgc_mb {
+                display: none;
+                @media screen and (max-width: 768px) {
+                    display: block;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    z-index: 1;
+                }
+            }
+            .ency_box {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                padding-top: 12rem;
+                @media screen and (max-width: 1200px) {
+                    padding-top: 8rem;
+                }
+                @media screen and (max-width: 768px) {
+                    padding-top: 7rem;
+                }
+                @media screen and (max-width: 768px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .ency_left {
+                    @media screen and (max-width: 1600px) {
+                        z-index: 3;
+                    }
+                    @media screen and (max-width: 768px) {
+                        // display: inline;
+                        // border: 1px solid black;
+                        margin-top: 5rem;
+                        text-align: center;
+                    }
+                    @media screen and (max-width: 650px) {
+                        margin-top: 3rem;
+                    }
+                    @media screen and (max-width: 550px) {
+                        margin-top: 1rem;
+                    }
+                    @media screen and (max-width: 414px) {
+                        margin-top: 0;
+                    }
+                    @media screen and (max-width: 375px) {
+                        margin-top: -2rem;
+                    }
+                    @media screen and (max-width: 320px) {
+                        margin-top: -3rem;
+                    }
+                }
+                .ency_right {
+                    @media screen and (max-width: 1600px) {
+                        z-index: 3;
+                    }
+                    @media screen and (max-width: 768px) {
+                        // border: 1px solid black;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-gap: 200px;
+                        margin-top: 17rem;
+                    }
+                    @media screen and (max-width: 650px) {
+                        margin-top: 14rem;
+                    }
+                    @media screen and (max-width: 550px) {
+                        margin-top: 10rem;
+                    }
+                    @media screen and (max-width: 414px) {
+                        margin-top: 7rem;
+                        grid-gap: 120px;
+                    }
+                    @media screen and (max-width: 375px) {
+                        grid-gap: 100px;
+                        margin-top: 7rem;
+                    }
+                }
+
+                .ency_left > img {
+                    display: block;
+                    margin: 0 auto;
+                    cursor: pointer;
+                    @media screen and (max-width: 1024px) {
+                        width: 25%;
+                    }
+                    @media screen and (max-width: 768px) {
+                        // width:25% !important;
+                        display: inline;
+                    }
+                }
+
+                .ency1 {
+                }
+                .ency2 {
+                    transform: translateX(-100px);
+                    @media screen and (max-width: 768px) {
+                        transform: translateX(0);
+                        width: 20% !important;
+                        margin: 0 40px !important;
+                    }
+                    @media screen and (max-width: 320px) {
+                       margin: 0 !important;
+                    }
+                }
+                .ency3 {
+                    // transform: translateX(60px);
+                    transform: translateY(50px);
+                    padding-left: 50px;
+                    @media screen and (max-width: 1024px) {
+                        transform: translateY(0);
+                        width: 35% !important;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 25% !important;
+                        transform: translateY(0);
+                        padding-left: 0;
+                    }
+                    @media screen and (max-width: 320px) {
+                       padding: 0;
+                    }
+                }
+                .ency_right > img {
+                    display: block;
+                    margin: 0 auto;
+                    cursor: pointer;
+                    @media screen and (max-width: 1024px) {
+                        width: 25%;
+                    }
+                    @media screen and (max-width: 768px) {
+                        display: inline;
+                        width: 50% !important;
+                    }
+                    @media screen and (max-width: 500px) {
+                        width: 60% !important;
+                    }
+                    @media screen and (max-width: 375px) {
+                        // width: 80% !important;
+                        // margin: 0 20px;
+                    }
+                }
+                .ency4 {
+                    padding-right: 65px;
+                    transform: translateY(40px);
+                    @media screen and (max-width: 1024px) {
+                        width: 35% !important;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        transform: translateY(0);
+                    }
+                    @media screen and (max-width: 768px) {
+                        padding: 0;
+                        transform: translateY(0);
+                        width: 23% !important;
+                        // padding-right: 50px;
+                    }
+                }
+                .ency5 {
+                    transform: translateY(140px);
+                    @media screen and (max-width: 1024px) {
+                        transform: translateY(80px);
+                    }
+                    @media screen and (max-width: 768px) {
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lesson3 {
+    width: 100%;
+    height: 1100px;
+    background-image: url(../img/lesson3/line.png);
+    position: relative;
+    // border: 1px solid black;
+    // overflow: hidden;
+    @media screen and (max-width: 1600px) {
+        height: 100%;
+        margin-top: 10rem;
+    }
+    @media screen and (max-width: 768px) {
+        margin-top: 7rem;
+    }
+    @media screen and (max-width: 414px) {
+        margin-top: 5rem;
+    }
+
+    // 我要報營
+    .lesson3_bg {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/lesson3/lesson3_bg.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -75%;
+        z-index: 3;
+        overflow: hidden;
+        // border: 1px solid black;
+        @media screen and (max-width: 1600px) {
+            background-image: none;
+            position: static;
+        }
+        @media screen and (max-width: 768px) {
+            // background-image: url(../../img/lesson3/bg_mb.png);
+            // background-position-y:-70px ;
+            // background-size: 100%;
+            // margin-bottom: 2rem;
+            // padding: 2rem 0;
+            // height: 100%;
+        }
+        .lesson3_main {
+            margin-top: 8rem;
+            // border: 1px solid black;
+            @media screen and (max-width: 1600px) {
+                margin-top: 0;
+                padding: 0 60px;
+            }
+            @media screen and (max-width: 1024px) {
+                margin-top: 0;
+                padding: 0 20px;
+            }
+
+            .commerce_top {
+                width: 100%;
+            }
+            .main1 {
+                background-image: url(../img/lesson3/commerce_mid.png);
+                background-size: contain;
+                display: grid;
+                grid-template-columns: 15% 70% 10%;
+                grid-gap: 20px;
+                position: relative;
+                @media screen and (max-width: 1024px) {
+                    display: block;
+                    padding: 0 2rem;
+                }
+                @media screen and (max-width: 768px) {
+                    padding-bottom: 3rem;
+                }
+                .people_left {
+                    width: 100%;
+                    height: 100%;
+                    margin-left: 10px;
+                    @media screen and (max-width: 1024px) {
+                        display: none;
+                    }
+                }
+                .main1_mid {
+                    .commerce_title {
+                        width: 100%;
+                    }
+                    p {
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        @media screen and (max-width: 768px) {
+                            font-size: 1rem;
+                        }
+                        @media screen and (max-width: 375px) {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                .people_right {
+                    position: absolute;
+                    right: 0;
+                    // width: 100%;
+                    height: 100%;
+                    @media screen and (max-width: 1024px) {
+                        display: none;
+                    }
+                }
+            }
+            .main2 {
+                background-image: url(../img/lesson3/commerce_mid2.png);
+                background-size: contain;
+                position: relative;
+                padding: 10px 2rem 0 2rem;
+                // padding: 0 2rem;
+                @media screen and (max-width: 768px) {
+                    //    padding-top: 3rem;
+                }
+                a {
+                    .sigup {
+                        position: absolute;
+                        top: -10%;
+                        left: 40%;
+                        cursor: pointer;
+                        @media screen and (max-width: 850px) {
+                            left: 35%;
+                        }
+                        @media screen and (max-width: 768px) {
+                            position: static;
+                            display: block;
+                            margin: 0 auto;
+                            transform: translateY(-50px);
+                        }
+                    }
+                }
+
+                h2 {
+                    background-color: #000000;
+                    display: inline-block;
+                    color: #fff;
+                    padding: 5px 15px;
+                    @media screen and (max-width: 768px) {
+                        margin-top: -3rem;
+                    }
+                }
+                p {
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                    font-weight: 500;
+                    @media screen and (max-width: 768px) {
+                        font-size: 1rem;
+                    }
+                    @media screen and (max-width: 520px) {
+                        font-size: 0.8rem;
+                    }
+                    img {
+                        width: 10%;
+                        @media screen and (max-width: 414px) {
+                            width: 20%;
+                        }
+                    }
+                }
+            }
+            .commerce_bom {
+                width: 100%;
+            }
+        }
+    }
+    // 箭頭
+    .arrow_box {
+        @media screen and (max-width: 1600px) {
+            display: none;
+        }
+        .icon_arrow1 {
+            position: absolute;
+            bottom: 60%;
+            left: 6%;
+        }
+        .icon_arrow2 {
+            position: absolute;
+            bottom: 40%;
+            left: 16%;
+        }
+        .icon_arrow3 {
+            position: absolute;
+            bottom: 20%;
+            left: 4%;
+        }
+        .icon_arrow4 {
+            position: absolute;
+            bottom: 65%;
+            right: 5%;
+        }
+        .icon_arrow5 {
+            position: absolute;
+            bottom: 45%;
+            right: 8%;
+        }
+        .icon_arrow6 {
+            position: absolute;
+            bottom: 20%;
+            right: 5%;
+        }
+    }
+
+    // ig網紅
+    .igslide {
+        padding-top: 300px;
+        border: 1px solid black;
+        @media screen and (max-width: 1600px) {
+            padding-top: 0;
+        }
+        @media screen and (max-width: 768px) {
+            // margin-right: 2rem;
+            padding: 0 20px;
+        }
+        @media screen and (max-width: 414px) {
+            margin-top: 2rem;
+        }
+        .ig_title {
+            display: block;
+            margin: 0 auto;
+            @media screen and (max-width: 768px) {
+                width: 50%;
+            }
+        }
+        .igslide_main{
+            width: 100%;
+            overflow: hidden;
+            border: 1px solid black;
+            @media screen and (max-width: 768px) {
+                // padding: 0 20px;
+            }
+            
+        }
+        
+       
+    }
+}
+// 講師跳出視窗
+.jump_main {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    .jump {
+        // display: none;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(59, 76, 92, 0.5);
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .jump_box {
+            // border: 1px solid black;
+            width: 700px;
+            height: 500px;
+
+            // position: absolute;
+            // left: 50%;
+            // top: 50%;
+            // transform: translate(-50%, -50%);
+            .jump_img {
+                position: relative;
+                .out {
+                    position: absolute;
+                    top: -5%;
+                    right: -4%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+// 講師跳出視窗mb
+.jump_main_mb {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    .jump_mb {
+        // display: none;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(59, 76, 92, 0.5);
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .jump_box_mb {
+            // border: 1px solid black;
+            width: 700px;
+            height: 500px;
+
+            // position: absolute;
+            // left: 50%;
+            // top: 50%;
+            // transform: translate(-50%, -50%);
+            .jump_img_mb {
+                position: relative;
+                .out_mb {
+                    width: 7%;
+                    position: absolute;
+                    top: -2%;
+                    right: 18%;
+                    cursor: pointer;
+                }
+                #img_main_mb{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                #img_main_mb>img{
+                    width: 60%;
+                    
+                }
+            }
+        }
+    }
+}
+// 電商小百科
+.jump_ecny {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    .ecny {
+        // display: none;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(59, 76, 92, 0.5);
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ecny_box {
+            // border: 1px solid black;
+            width: 700px;
+            height: 500px;
+
+            // position: absolute;
+            // left: 50%;
+            // top: 50%;
+            // transform: translate(-50%, -50%);
+            .ecny_img {
+                position: relative;
+                .ecny_out {
+                    position: absolute;
+                    top: -5%;
+                    right: 8%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+// 電商小百科mb
+.ecny_mb {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    
+    .ecny_mb_min {
+        
+        // display: none;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(59, 76, 92, 0.5);
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ecny_box_mb {
+            padding-top: 10rem;
+            border: 1px solid black;
+            width: 700px;
+            height: 100%;
+
+            // position: absolute;
+            // left: 50%;
+            // top: 50%;
+            // transform: translate(-50%, -50%);
+            .ecny_img_mb {
+                position: relative;
+                .ecny_out_mb {
+                    width: 7%;
+                    position: absolute;
+                    top: -3%;
+                    right: 3%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
