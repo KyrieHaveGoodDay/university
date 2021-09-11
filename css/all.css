@@ -726,6 +726,12 @@ img {
   }
 }
 
+@media screen and (max-width: 414px) {
+  .banner .banner_main .banner_text .banner_text_mb {
+    padding: 0 10px;
+  }
+}
+
 .banner .banner_main .banner_text img {
   z-index: 10;
 }
